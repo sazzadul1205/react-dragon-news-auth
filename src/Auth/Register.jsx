@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import Navbar from '../Pages/Shared/NavBar/Navbar';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
@@ -16,7 +16,7 @@ const Register = () => {
         const photo = form.get('photo_url');
         console.log(email, password, name, photo);
 
-        // Create user
+
         createUser(email, password)
             .then(result => console.log(result.user))
             .catch(error => console.error(error))

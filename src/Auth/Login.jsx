@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import Navbar from '../Pages/Shared/NavBar/Navbar';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProvider';
@@ -58,7 +58,7 @@ const Login = () => {
                     <div className="form-control mt-6">
                         <button className="btn btn-primary bg-[#403F3F] border-none">Login</button>
                     </div>
-                    <p>Don't have an Account please<Link to={'/register'}>
+                    <p>Dont have an Account please<Link to={'/register'}>
                         <button className="btn btn-link text-[#F75B5F]">Register</button>
                     </Link></p>
                 </form>
